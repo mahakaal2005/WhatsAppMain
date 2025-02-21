@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Updates"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/exploreMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore More"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/exploreview"
+            android:layout_width="96dp"
+            android:layout_height="33dp"
+            android:paddingLeft="5dp"
+            android:text="Explore  >"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.821"
+            app:layout_constraintStart_toEndOf="@+id/channels"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <TextView
+            android:id="@+id/followChannels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:text="Find Channels To Follow"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/followedChannels" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/followedChannels"
+            android:layout_width="0dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="32dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="227dp"
+            android:layout_height="43dp"
+            android:paddingLeft="5dp"
+            android:text="Updates"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="76dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="5dp"
+            android:text="Status"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:src="@drawable/qrcode"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/search"
+            app:layout_constraintStart_toEndOf="@+id/qrcode"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/channels"
+            android:layout_width="96dp"
+            android:layout_height="33dp"
+            android:paddingLeft="5dp"
+            android:text="Channels"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:src="@drawable/dots"
+            app:layout_constraintStart_toEndOf="@+id/search"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="168dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:smoothScrollbar="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/findChannelsToFollowRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/exploreMore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/followChannels" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
