@@ -5,17 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.whatsapp_main.R
 import com.example.whatsapp_main.adaptors.statusAdaptor
 import com.example.whatsapp_main.dataClass.StatusCustomItem
-import com.example.whatsapp_main.databinding.FragmentChatsBinding
-import com.example.whatsapp_main.startLockScreen
+import com.example.whatsapp_main.databinding.FragmentUpdatesBinding
 
 
 class Updates : Fragment(R.layout.fragment_updates) {
 
-    private lateinit var binding: FragmentChatsBinding
+    private lateinit var binding: FragmentUpdatesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,7 +26,7 @@ class Updates : Fragment(R.layout.fragment_updates) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding=FragmentChatsBinding.inflate(layoutInflater)
+        binding=FragmentUpdatesBinding.bind(view)
 
         val profilePhoto= arrayOf(
             R.drawable.atul,
@@ -55,9 +54,9 @@ class Updates : Fragment(R.layout.fragment_updates) {
             status.add(item)
         }
 
-        val updatesAdaptor=statusAdaptor(status)
-        binding.recycle.adapter=updatesAdaptor
-        binding.recycle.layoutManager=GridLayoutManager(requireContext(),4)
+        val statusAdaptor= statusAdaptor(status)
+        binding.statusRecyclerView.adapter=statusAdaptor
+        binding.statusRecyclerView.layoutManager= LinearLayoutManager(requireContext())
 
     }
 

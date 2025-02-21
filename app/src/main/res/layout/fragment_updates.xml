@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.821"
             app:layout_constraintStart_toEndOf="@+id/channels"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+            app:layout_constraintTop_toBottomOf="@+id/statusRecyclerView" />
 
         <TextView
             android:id="@+id/followChannels"
@@ -52,7 +52,7 @@
             android:scrollbars="none"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+            app:layout_constraintTop_toBottomOf="@+id/statusRecyclerView" />
 
         <TextView
             android:id="@+id/textView"
@@ -110,7 +110,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+            app:layout_constraintTop_toBottomOf="@+id/statusRecyclerView" />
 
 
         <ImageView
@@ -124,7 +124,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/statusRecyclerView"
             android:layout_width="0dp"
             android:layout_height="168dp"
             android:orientation="horizontal"

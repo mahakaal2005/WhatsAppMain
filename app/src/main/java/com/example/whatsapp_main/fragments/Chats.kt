@@ -30,7 +30,7 @@ class Chats : Fragment(R.layout.fragment_chats) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding = FragmentChatsBinding.inflate(layoutInflater)
+        binding = FragmentChatsBinding.bind(view)
 
         // Sample Data
         val name = arrayOf("Atul", "Anantjeet", "Faiqua", "Anant", "Rudra", "Utkristh")

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whatsapp_main.R
 import com.example.whatsapp_main.dataClass.StatusCustomItem
@@ -13,7 +14,7 @@ import com.example.whatsapp_main.dataClass.StatusCustomItem
 class statusAdaptor(val updates:ArrayList<StatusCustomItem>):RecyclerView.Adapter<statusAdaptor.updatesViewHolder>(){
     inner class updatesViewHolder(itemview:View):RecyclerView.ViewHolder(itemview){
         val profilePhoto:ImageView=itemview.findViewById(R.id.profilePhoto)
-        val background:ImageView=itemview.findViewById(R.id.background)
+        val background:ConstraintLayout=itemview.findViewById(R.id.constraintBackground)
         val name:TextView=itemview.findViewById(R.id.name)
     }
 
@@ -24,7 +25,7 @@ class statusAdaptor(val updates:ArrayList<StatusCustomItem>):RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: updatesViewHolder, position: Int) {
         holder.profilePhoto.setImageResource((updates[position].profilePhoto))
-        holder.background.setImageResource((updates[position].backgroundPhoto))
+        holder.background.setBackgroundResource((updates[position].backgroundPhoto))
         holder.name.text=updates[position].name
     }
 

@@ -12,44 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Whatsapp_Main"
         tools:targetApi="31">
-        <activity
-            android:name=".dataClass.statusCustomItem"
-            android:exported="false" />
-        <activity
-            android:name=".startLockScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".dataClass.favourites"
-            android:exported="true" />
-        <activity
-            android:name=".calls"
-            android:exported="false" />
-        <activity
-            android:name=".communities"
-            android:exported="false" />
-        <activity
-            android:name=".customItems.statusCustomItem"
-            android:exported="false" />
-        <activity
-            android:name=".status"
-            android:exported="false" />
-        <activity
-            android:name=".RecycleItem"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false">
+
+
+        </activity>
+        <activity android:name=".startLockScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
