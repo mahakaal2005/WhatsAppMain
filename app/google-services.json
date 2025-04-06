@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "377849875590",
+    "project_id": "chatting-app-aac6b",
+    "storage_bucket": "chatting-app-aac6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377849875590:android:6d9ec38b5e0135e65e9507",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp_main"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6uVlfmRsxRj3I_Hv6foG7wkV6U_sd1dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377849875590:android:f5590ee275aa987f5e9507",
+        "android_client_info": {
+          "package_name": "com.example.whatsup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6uVlfmRsxRj3I_Hv6foG7wkV6U_sd1dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
